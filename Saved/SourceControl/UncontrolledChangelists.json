@@ -17,7 +17,17 @@
 				"E:/Unreal Projects/beyond/Content/Characters/Animations/CharacterMovement.uasset",
 				"E:/Unreal Projects/beyond/Content/Characters/Animations/BS_CharacterMovement.uasset",
 				"E:/Unreal Projects/beyond/Content/Characters/Animations/AB_CharacterMovement.uasset",
-				"E:/Unreal Projects/beyond/Content/Levels/DemoMap.umap"
+				"E:/Unreal Projects/beyond/Content/Levels/DemoMap.umap",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/BS_CharacterMovement1.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/AB_CharacterMovement1.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Models/CharacterBase.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Models/CharacterBase_PhysicsAsset.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Models/CharacterBase_Skeleton.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/Idle.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/Walking.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/WalkingBackwards.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/WalkingLeftStrafe.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/WalkingRightStrafe.uasset"
 			]
 		}
 	]
