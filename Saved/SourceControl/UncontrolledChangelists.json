@@ -12,7 +12,12 @@
 				"E:/Unreal Projects/beyond/Content/Assets/Models/Cube_003.uasset",
 				"E:/Unreal Projects/beyond/Content/Assets/Models/Cube_006.uasset",
 				"E:/Unreal Projects/beyond/Content/Assets/Models/Cube_018.uasset",
-				"E:/Unreal Projects/beyond/Content/Assets/Models/Cube_019.uasset"
+				"E:/Unreal Projects/beyond/Content/Assets/Models/Cube_019.uasset",
+				"E:/Unreal Projects/beyond/Content/Player/BP_Player_Main.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/CharacterMovement.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/BS_CharacterMovement.uasset",
+				"E:/Unreal Projects/beyond/Content/Characters/Animations/AB_CharacterMovement.uasset",
+				"E:/Unreal Projects/beyond/Content/Levels/DemoMap.umap"
 			]
 		}
 	]
