@@ -111,11 +111,16 @@ Players can adjust these in-game through the graphics settings menu, or develope
 
 ```cpp
 // Set all quality levels to Medium (1)
-static IConsoleVariable* CVarQuality = IConsoleManager::Get().FindConsoleVariable(TEXT("sg.OverallScalabilityLevel"));
-CVarQuality->Set(1);
+if (IConsoleVariable* CVarQuality = IConsoleManager::Get().FindConsoleVariable(TEXT("sg.OverallScalabilityLevel")))
+{
+    CVarQuality->Set(1);
+}
 
 // Or set individual categories
-IConsoleManager::Get().FindConsoleVariable(TEXT("sg.ShadowQuality"))->Set(2);
+if (IConsoleVariable* CVarShadow = IConsoleManager::Get().FindConsoleVariable(TEXT("sg.ShadowQuality")))
+{
+    CVarShadow->Set(2);
+}
 ```
 
 ## Additional Recommendations
