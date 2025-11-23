@@ -80,6 +80,44 @@ These settings provide a good baseline for "High" quality settings. For scalabil
 - **High:** Consider enabling some ray-traced features selectively
 - **Ultra:** Can re-enable hardware ray tracing for high-end GPUs
 
+## Scalability Configuration
+
+A new `DefaultScalability.ini` file has been added to provide quality presets for different performance targets:
+
+### Quality Levels (0-3)
+
+Each category supports 4 quality levels:
+- **0 (Low):** Optimized for lowest-end hardware, prioritizes performance
+- **1 (Medium):** Balanced settings for mid-range hardware
+- **2 (High):** High quality settings for capable hardware
+- **3 (Epic/Ultra):** Maximum quality for high-end systems
+
+### Categories Include:
+
+1. **Anti-Aliasing Quality:** TAA settings and post-process AA quality
+2. **View Distance Quality:** LOD bias and view distance scaling
+3. **Shadow Quality:** Shadow resolution, cascades, and virtual shadow maps
+4. **Global Illumination Quality:** Lumen settings for different quality levels
+5. **Reflection Quality:** Lumen reflection quality and screen space reflections
+6. **Post Process Quality:** Motion blur, depth of field, bloom, AO
+7. **Texture Quality:** Streaming pool size, mip bias, anisotropic filtering
+8. **Effects Quality:** Particle systems, translucency, volumetric fog
+9. **Foliage Quality:** Grass and foliage density scaling
+10. **Shading Quality:** Hair rendering and advanced shading features
+
+### Using Scalability Settings
+
+Players can adjust these in-game through the graphics settings menu, or developers can set them programmatically:
+
+```cpp
+// Set all quality levels to Medium (1)
+static IConsoleVariable* CVarQuality = IConsoleManager::Get().FindConsoleVariable(TEXT("sg.OverallScalabilityLevel"));
+CVarQuality->Set(1);
+
+// Or set individual categories
+IConsoleManager::Get().FindConsoleVariable(TEXT("sg.ShadowQuality"))->Set(2);
+```
+
 ## Additional Recommendations
 
 1. **Build Lighting:** Consider using baked lighting for static elements
@@ -87,6 +125,8 @@ These settings provide a good baseline for "High" quality settings. For scalabil
 3. **Occlusion:** Use precomputed visibility volumes in closed spaces
 4. **Nanite:** Leverage Nanite for static meshes where applicable
 5. **Profiling:** Regularly profile to identify specific bottlenecks
+6. **Scalability Testing:** Test all scalability levels to ensure smooth experience across hardware
+7. **Auto-Detection:** Implement automatic quality detection based on hardware capabilities
 
 ## Reverting Changes
 
